@@ -4,9 +4,6 @@ keras
 h5py
 spacy
 
-# Database
-git+git://github.com/pymssql/pymssql
-
 # Networking
 requests
 request

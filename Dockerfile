@@ -8,8 +8,8 @@ RUN apt update \
 WORKDIR /service 
 
 # Copying pip requirement files 
-COPY ./main/requirements.txt ./requirements.txt
-COPY ./main/sense2vec_requirements.txt ./sense2vec_requirements.txt
+COPY ./requirements.txt ./requirements.txt
+COPY ./sense2vec_requirements.txt ./sense2vec_requirements.txt
 
 # Install python dependencies
 RUN export C_INCLUDE_PATH=/usr/include
