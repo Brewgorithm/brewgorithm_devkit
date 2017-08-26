@@ -1,0 +1,17 @@
+# Machine learning
+gensim
+keras
+h5py
+spacy
+
+# Database
+git+git://github.com/pymssql/pymssql
+
+# Networking
+requests
+request
+
+# Flask
+flask-cors
+flask
+flask-API
