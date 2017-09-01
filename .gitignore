@@ -11,6 +11,9 @@ venv/*
 *.swo
 *~
 
+# Secrets
+**/smalltalk/config.py
+
 # Data files
 database/db/*
 

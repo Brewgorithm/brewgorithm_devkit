@@ -22,13 +22,14 @@ Only basic models are provided through this development kit. Advanced models, su
 
 ### Installation
 To install this library, run:
-`pip install -r requirements.txt`
-`pip install -e .`
+* `pip install -r requirements.txt`
+* `pip install -e .`
+
 To run tests, please execute tests in Docker:
-`docker-compose up --build`
-`bash access_cluster.sh`
-`pip install -e .`
-`py.test tests`
+* `docker-compose up --build`
+* `bash access_cluster.sh`
+* `pip install -e .`
+* `py.test tests`
 
 ### Contributors
 Please find a list of contributors under `contributors.txt`.

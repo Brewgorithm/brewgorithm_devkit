@@ -1,0 +1,8 @@
+{
+  "tests/language/test/test_cleaning.py": true,
+  "tests/language/test/test_sense_emb.py": true,
+  "tests/neural/beer_emb/test_beer_emb_load.py": true,
+  "tests/neural/smalltalk/test_api_ops.py": true,
+  "tests/neural/word_weighter/test_word_weighter_dev.py": true,
+  "tests/neural/word_weighter/test_word_weighter_load.py": true
+}
