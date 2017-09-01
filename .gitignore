@@ -2,6 +2,7 @@
 __pycache__/*
 venv/*
 *.pyc
+.cache
 
 # Mac
 .DS_STORE
