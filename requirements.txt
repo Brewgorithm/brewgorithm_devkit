@@ -3,12 +3,3 @@ gensim
 keras
 h5py
 spacy
-
-# Networking
-requests
-request
-
-# Flask
-flask-cors
-flask
-flask-API
