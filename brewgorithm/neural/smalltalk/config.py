@@ -1,3 +1,0 @@
-API_AI_BASEURL = 'https://api.api.ai/api/query'
-API_AI_ACCESS_TOKEN = 'REDACTED'
-API_AI_VERSION = '20150910'
