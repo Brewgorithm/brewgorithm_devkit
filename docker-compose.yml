@@ -14,7 +14,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./main:/service
+      - ./:/service
     networks:
       - default
     tty: true
