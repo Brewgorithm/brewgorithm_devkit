@@ -1,5 +1,4 @@
-Original author: 
+Contributors:
 'ericzhao28' - Eric Zhao
-Initial contributors:
 'patrickleet' - Patrick Scott
 'mleue' - Michael Leue
