@@ -17,3 +17,6 @@ RUN pip3 install -r ./requirements.txt
 
 # Download natural language models
 RUN python3 -m spacy.en.download 
+
+# Install dev-only dependencies
+RUN pip3 install pytest
