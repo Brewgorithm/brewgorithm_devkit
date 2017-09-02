@@ -6,16 +6,11 @@ This is the open source Brewgorithm development kit. This Python library allows 
 ### Overview
 Pre-trained Beer2vec model
 * This module offers pretrained vector representations of beers.
-* As with word embeddings, axises correspond to latent factors in the beer space, and the greater the cosine similarity of two beer vectors, the more similar those two beers are.
-
 Beer-focused Word Embeddings
 * This module offers pre-trained word embeddings specially designed to offer a deeper level of granularity for beer-specific vocabulary.
 * Embeddings are offered at 64, 128, 256, and 512 dimensions.
-
 Beer-relatedness word weighter
 * This system offers a shallow, dense neural network defined in Keras that weights whether a given word vector represents a word that is beer-related.
-* The word vectors the pre-trained model has been trained to handle come from `neural/beer_emb`.
-
 Language module
 * This module offers basic access to Sense2vec and Spacy utilities. It offers parsing as well as cleaning functions to help expedite development of natural language-related preprocessing.
 
@@ -23,15 +18,18 @@ Language module
 Only basic models are provided through this development kit. Advanced models, such as food-beer pairing suggestion networks must be requested through conrad.barret@zx-ventures.com. In addition, some training scripts are likewise excluded from this open source release.
 
 ### Installation
-To install this library, run:
-* `pip install -r requirements.txt`
-* `pip install -e .`
+To install this library, first make sure that:
+* You have Spacy and its English model installed
+* You have Sense2vec and its default model installed
+* Then: `pip install brewgorithm`
 
-To run tests, please execute tests in Docker:
+To run this library in Docker (do this if you are having issues installing otherwise):
 * `docker-compose up --build`
 * `bash access_cluster.sh`
 * `pip install -e .`
 * `py.test tests`
+
+Please note that installing Spacy and Sense2vec models will take quite a while.
 
 ### Contributors
 Please find a list of contributors under `contributors.txt`.
