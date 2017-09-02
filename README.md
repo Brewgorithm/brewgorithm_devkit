@@ -15,16 +15,18 @@ Beer-relatedness word weighter
 * This system offers a shallow, dense neural network defined in Keras that weights whether a given word vector represents a word that is beer-related.
 
 Language module
-* This module offers basic access to Sense2vec and Spacy utilities. It offers parsing as well as cleaning functions to help expedite development of natural language-related preprocessing.
+* This module offers basic access to Spacy utilities. It offers parsing as well as cleaning functions to help expedite development of natural language-related preprocessing.
 
 ### Redactions
 Only basic models are provided through this development kit. Advanced models, such as food-beer pairing suggestion networks must be requested through conrad.barret@zx-ventures.com. In addition, some training scripts are likewise excluded from this open source release.
 
 ### Installation
-To install this library, first make sure that:
-* You have Spacy and its English model installed
-* You have Sense2vec and its default model installed
-* Then: `pip install brewgorithm`
+To install this library, first make sure that you have Spacy and its English model installed:
+* `pip install spacy`
+* `python -m spacy.en.download`
+
+Then:
+* `pip install brewgorithm`
 
 To run this library in Docker (do this if you are having issues installing otherwise):
 * `docker-compose up --build`
@@ -32,7 +34,7 @@ To run this library in Docker (do this if you are having issues installing other
 * `pip install -e .`
 * `py.test tests`
 
-Please note that installing Spacy and Sense2vec models will take quite a while.
+Please note that installing the Spacy model will take quite a while.
 
 ### Contributors
 Please find a list of contributors under `contributors.txt`.
