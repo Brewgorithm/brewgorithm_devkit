@@ -12,28 +12,5 @@ venv/*
 *.swo
 *~
 
-# Secrets
-**/smalltalk/config.py
-
-# Data files
-database/db/*
-
-# Notes
-notes/*
-social_eng/*
-
-# Food
-food_emb/*
-
-# Javascript
-node_modules/*
-
 # Egg
 brewgorithm.egg-info
-
-# TF
-tensorboard_logs/*
-!tensorboard_logs/.gitkeep
-
-# ZX
-models/*.tsv
