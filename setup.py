@@ -21,6 +21,8 @@ setup(
   ],
   keywords='beer data ai machine_learning',
   packages=find_packages(exclude=['docs', 'tests']),
+  package_data={'': ['*.txt', '*.model']},
+  include_package_data=True,
   install_requires=['keras', 'gensim', 'spacy', 'h5py', 'tensorflow']
 )
 
