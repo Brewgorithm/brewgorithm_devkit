@@ -1,6 +1,8 @@
 # Brewgorithm Development Kit
 This is the open source Brewgorithm development kit. This Python library allows any developer to leverage Brewgorithm's basic machine learning models. 
 
+[![Maintenance Intended](http://maintained.tech/badge.svg)](http://maintained.tech/)
+
 ### Overview
 Pre-trained Beer2vec model
 * This module offers pretrained vector representations of beers.
