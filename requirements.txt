@@ -3,3 +3,4 @@ gensim
 keras
 h5py
 spacy
+tensorflow
