@@ -6,11 +6,14 @@ This is the open source Brewgorithm development kit. This Python library allows 
 ### Overview
 Pre-trained Beer2vec model
 * This module offers pretrained vector representations of beers.
+
 Beer-focused Word Embeddings
 * This module offers pre-trained word embeddings specially designed to offer a deeper level of granularity for beer-specific vocabulary.
 * Embeddings are offered at 64, 128, 256, and 512 dimensions.
+
 Beer-relatedness word weighter
 * This system offers a shallow, dense neural network defined in Keras that weights whether a given word vector represents a word that is beer-related.
+
 Language module
 * This module offers basic access to Sense2vec and Spacy utilities. It offers parsing as well as cleaning functions to help expedite development of natural language-related preprocessing.
 
