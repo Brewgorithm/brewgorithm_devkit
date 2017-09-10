@@ -1,4 +1,5 @@
 from gensim.models import Word2Vec
+from pathlib import Path
 import numpy as np
 from .config import MODEL_NAME, MODEL_DIR, EMB_DIM
 from .access_ext import language
@@ -6,7 +7,11 @@ from .access_ext import language
 clean_word = language.cleaning.clean_word
 parsing = language.parsing
 
-model = Word2Vec.load(MODEL_DIR + MODEL_NAME)
+
+if not Path(MODEL_DIR + MODEL_NAME).is_file():
+  model = None
+else: 
+  model = Word2Vec.load(MODEL_DIR + MODEL_NAME)
 
 
 def most_similar(positive=None, negative=None):
@@ -15,6 +20,8 @@ def most_similar(positive=None, negative=None):
   Return:
     most_similar_words -- list of tuples (word, similarity_score)
   """
+  if model is None:
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
   if positive is None:
     positive = []
   if negative is None:
@@ -24,9 +31,10 @@ def most_similar(positive=None, negative=None):
 
 def embed_word(word, default=None):
   """Return beer embedding for a word."""
+  if model is None:
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
   if default is None:
     default = np.zeros(EMB_DIM)
-
   word = clean_word(word)
   if word in model:
     return model.wv[word]
@@ -40,6 +48,8 @@ def embed_doc(doc_string, word_filter):
   Return:
     embeddings -- numpy array 2d, (number_of_token_embeddings X EMB_DIM)
   """
+  if model is None:
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
   embeddings = []
   # for each token in the doc string
   for token in parsing.tokenize(doc_string, clean=False):
@@ -61,4 +71,6 @@ def embed_doc(doc_string, word_filter):
 
 def get_model():
   """Return the beer embedding model instance."""
+  if model is None:
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
   return model

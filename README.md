@@ -27,6 +27,7 @@ To install this library, first make sure that you have Spacy and its English mod
 
 Then:
 * `pip install brewgorithm`
+* `python3 -m brewgorithm.beer_emb.download`
 
 To run this library in Docker (do this if you are having issues installing otherwise):
 * `docker-compose up --build`
