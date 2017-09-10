@@ -21,7 +21,7 @@ def most_similar(positive=None, negative=None):
     most_similar_words -- list of tuples (word, similarity_score)
   """
   if model is None:
-    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.neural.beer_emb.download")
   if positive is None:
     positive = []
   if negative is None:
@@ -32,7 +32,7 @@ def most_similar(positive=None, negative=None):
 def embed_word(word, default=None):
   """Return beer embedding for a word."""
   if model is None:
-    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.neural.beer_emb.download")
   if default is None:
     default = np.zeros(EMB_DIM)
   word = clean_word(word)
@@ -49,7 +49,7 @@ def embed_doc(doc_string, word_filter):
     embeddings -- numpy array 2d, (number_of_token_embeddings X EMB_DIM)
   """
   if model is None:
-    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.neural.beer_emb.download")
   embeddings = []
   # for each token in the doc string
   for token in parsing.tokenize(doc_string, clean=False):
@@ -72,5 +72,5 @@ def embed_doc(doc_string, word_filter):
 def get_model():
   """Return the beer embedding model instance."""
   if model is None:
-    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.beer_emb.download")
+    raise Exception("Install word_emb models first. Run: python3 -m brewgorithm.neural.beer_emb.download")
   return model
