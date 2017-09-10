@@ -1,2 +1,3 @@
 include *.txt
 global-include *.model
+global-include .gitkeep

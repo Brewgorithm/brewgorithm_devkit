@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/service
+      - ./tests/:/service
     networks:
       - default
     tty: true

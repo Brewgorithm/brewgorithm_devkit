@@ -3,7 +3,7 @@ from os import path
 
 setup(
   name='Brewgorithm',
-  version='2.2.1',
+  version='2.2.2',
   description='Machine Learning Library For Beer',
   url='https://github.com/ericzhao28/brewgorithm_devkit.git',
   author='Eric Zhao, Brewgorithm, and Contributors',
