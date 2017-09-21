@@ -23,11 +23,11 @@ Only basic models are provided through this development kit. Advanced models, su
 ### Installation
 To install this library, first make sure that you have Spacy and its English model installed:
 * `pip install spacy`
-* `python -m spacy.en.download`
+* `python3 -m spacy.en.download`
 
 Then:
 * `pip install brewgorithm`
-* `python3 -m brewgorithm.beer_emb.download`
+* `python3 -m brewgorithm.neural.beer_emb.download`
 
 To run this library in Docker (do this if you are having issues installing otherwise):
 * `docker-compose up --build`
