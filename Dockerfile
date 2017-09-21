@@ -20,3 +20,8 @@ RUN python3 -m spacy.en.download
 
 # Install dev-only dependencies
 RUN pip3 install pytest
+
+# install brewgorithm stuff
+RUN pip3 install brewgorithm
+
+RUN python3 -m brewgorithm.neural.beer_emb.download

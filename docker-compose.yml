@@ -10,8 +10,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - 6006:6006
+      - 8888:8888
     volumes:
-      - ./tests/:/service
+      - .:/service
     networks:
       - default
     tty: true

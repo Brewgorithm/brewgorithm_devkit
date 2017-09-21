@@ -21,6 +21,18 @@ Language module
 Only basic models are provided through this development kit. Advanced models, such as food-beer pairing suggestion networks must be requested through conrad.barret@zx-ventures.com. In addition, some training scripts are likewise excluded from this open source release.
 
 ### Installation
+
+#### Docker (Recommended)
+
+First, install "Docker for Mac"
+
+To run this library in Docker (do this if you are having issues installing otherwise):
+* `docker-compose up --build`
+* `bash access_cluster.sh`
+* `py.test tests`
+
+#### Locally
+
 To install this library, first make sure that you have Spacy and its English model installed:
 * `pip install spacy`
 * `python3 -m spacy.en.download`
@@ -28,12 +40,6 @@ To install this library, first make sure that you have Spacy and its English mod
 Then:
 * `pip install brewgorithm`
 * `python3 -m brewgorithm.neural.beer_emb.download`
-
-To run this library in Docker (do this if you are having issues installing otherwise):
-* `docker-compose up --build`
-* `bash access_cluster.sh`
-* `pip install -e .`
-* `py.test tests`
 
 Please note that installing the Spacy model will take quite a while.
 
